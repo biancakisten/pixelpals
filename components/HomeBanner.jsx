@@ -69,7 +69,6 @@ export default function HomeBanner() {
     <section className="home-banner" aria-labelledby="home-banner-title">
       <div className="home-banner__container">
         <header className="home-banner__heading">
-          <span className="home-banner__eyebrow">Solutions</span>
 
           <h2 id="home-banner-title">
             Digital solutions in development

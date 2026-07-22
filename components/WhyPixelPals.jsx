@@ -48,10 +48,6 @@ export default function WhyPixelPals() {
 
         <div className="why-pixel-pals__content">
           <header className="why-pixel-pals__heading">
-            <span className="why-pixel-pals__eyebrow">
-              Why businesses choose Pixel Pals
-            </span>
-
             <h2 id="why-pixel-pals-heading">
               Why businesses choose Pixel Pals
             </h2>

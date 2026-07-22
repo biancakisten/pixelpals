@@ -10,7 +10,7 @@
 
   width: 100%;
   padding: 96px 24px;
-  background: var(--process-background);
+  background: #ffffff;
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -29,21 +29,6 @@
   margin: 0 auto 52px;
   padding: 0;
   text-align: center;
-}
-
-.process-section__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: var(--process-light-blue);
-  color: var(--process-blue);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.5;
-  white-space: nowrap;
 }
 
 .process-section__heading h2 {

@@ -61,8 +61,6 @@ export default function AIPlatform() {
     >
       <div className="ai-platform__container">
         <header className="ai-platform__heading">
-          <span className="ai-platform__eyebrow">AI Platform</span>
-
           <h2 id="ai-platform-heading">Pixel Pals AI Platform</h2>
 
           <p>

@@ -9,13 +9,11 @@
   --pp-muted: #64748b;
   --pp-purple: #3b096d;
   --pp-blue: #2563eb;
-  --pp-surface: #f8fafc;
+  --pp-surface: #ffffff;
   --pp-border: #e2e8f0;
   width: 100%;
   padding: 72px clamp(24px, 4.5vw, 56px);
-  background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 30%),
-    linear-gradient(135deg, #f8fbff 0%, #f2f7ff 48%, #ffffff 100%);
+  background: #ffffff;
   color: var(--pp-navy);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
@@ -44,7 +42,6 @@
   max-width: 720px;
 }
 
-.pp-hero__badge,
 .pp-hero__title,
 .pp-hero__description,
 .pp-product p,
@@ -53,19 +50,6 @@
 .pp-product ul,
 .pp-hero__metrics {
   margin: 0;
-}
-
-.pp-hero__badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 12px;
-  border: 1px solid rgba(59, 9, 109, 0.14);
-  border-radius: 999px;
-  background: rgba(59, 9, 109, 0.06);
-  color: var(--pp-purple);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.5;
 }
 
 .pp-hero__title {

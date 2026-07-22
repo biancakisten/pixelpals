@@ -3,7 +3,7 @@
   --why-heading: #111827;
   --why-text: #5b6472;
   --why-border: #dfe7f1;
-  --why-background: #f8fbff;
+  --why-background: #0f172a;
   --why-green: #22c55e;
   --why-blue: #2563eb;
   --why-surface: #ffffff;
@@ -12,7 +12,7 @@
 
   width: 100%;
   padding: 112px 24px 120px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  background: var(--why-background);
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -123,12 +123,6 @@
 
 .why-pixel-pals__heading {
   width: 100%;
-}
-
-.why-pixel-pals__eyebrow {
-  margin-bottom: 16px;
-  background: #eef4ff;
-  color: var(--why-purple);
 }
 
 .why-pixel-pals__heading h2 {

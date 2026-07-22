@@ -39,7 +39,6 @@ export default function ProcessSection() {
     >
       <div className="process-section__container">
         <header className="process-section__heading">
-          <span className="process-section__eyebrow">Process</span>
 
           <h2 id="process-section-heading">
             From idea to launch without the fog

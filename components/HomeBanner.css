@@ -3,7 +3,7 @@
   --home-banner-heading: #0f172a;
   --home-banner-text: #64748b;
   --home-banner-border: #e2e8f0;
-  --home-banner-background: #f8fafc;
+  --home-banner-background: #0f172a;
   --home-banner-chip-background: rgba(59, 9, 109, 0.08);
   --home-banner-chip-border: rgba(59, 9, 109, 0.16);
 
@@ -27,20 +27,6 @@
   width: min(820px, 100%);
   margin: 0 auto 50px;
   text-align: center;
-}
-
-.home-banner__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: #eff6ff;
-  color: var(--home-banner-purple);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.5;
 }
 
 .home-banner__heading h2 {
@@ -144,7 +130,7 @@
 
 .home-banner__status {
   margin: auto 0 0;
-  color: var(--home-banner-purple);
+  color: #475569;
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;

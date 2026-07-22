@@ -4,11 +4,11 @@
   --ai-text: #64748b;
   --ai-border: #dfe7f1;
   --ai-blue: #2563eb;
-  --ai-surface: #f8fbff;
+  --ai-surface: #ffffff;
 
   width: 100%;
   padding: 112px 24px 120px;
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  background: #ffffff;
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -26,22 +26,6 @@
   width: min(760px, 100%);
   margin: 0 auto 48px;
   text-align: center;
-}
-
-.ai-platform__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: #eff6ff;
-  color: var(--ai-purple);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.5;
-  text-transform: uppercase;
 }
 
 .ai-platform__heading h2 {
