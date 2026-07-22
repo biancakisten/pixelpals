@@ -68,37 +68,23 @@
 .ai-platform__banner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 28px;
+  justify-content: center;
   margin-top: 24px;
   padding: 32px 36px;
   border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: 30px;
-  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 45%, #3b096d 100%);
-  box-shadow: 0 34px 72px -34px rgba(37, 99, 235, 0.45);
+  background: #f7ef46;
+  box-shadow: 0 34px 72px -34px rgba(37, 99, 235, 0.2);
 }
 
 .ai-platform__banner-copy {
   flex: 1 1 0;
-}
-
-.ai-platform__banner-badge {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 12px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
-  color: #e0ebff;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .ai-platform__banner h3 {
   margin: 0 0 10px;
-  color: #ffffff;
+  color: #111827;
   font-size: clamp(24px, 2.1vw, 30px);
   font-weight: 700;
   line-height: 1.2;
@@ -106,44 +92,9 @@
 
 .ai-platform__banner p {
   margin: 0;
-  color: #dbeafe;
+  color: #111827;
   font-size: 16px;
   line-height: 1.65;
-}
-
-.ai-platform__banner-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.ai-platform__banner-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 20px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
-}
-
-.ai-platform__banner-button:hover {
-  transform: translateY(-2px);
-}
-
-.ai-platform__banner-button--primary {
-  background: #ffffff;
-  color: #0f172a;
-  box-shadow: 0 12px 30px -18px rgba(15, 23, 42, 0.4);
-}
-
-.ai-platform__banner-button--secondary {
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
 }
 
 .ai-platform__card {
