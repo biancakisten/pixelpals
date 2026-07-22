@@ -26,10 +26,6 @@ export default function WhyPixelPals() {
     >
       <div className="why-pixel-pals__container">
         <div className="why-pixel-pals__visual">
-          <span className="why-pixel-pals__visual-badge">
-            AI delivery system
-          </span>
-
           <h2>
             Strategy, design, engineering, and automation moving together.
           </h2>
