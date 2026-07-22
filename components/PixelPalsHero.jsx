@@ -1,5 +1,4 @@
 import './PixelPalsHero.css';
-import successDot from '../public/success-dot.svg';
 
 const metrics = [
   { value: '4 core services', label: 'Web, AI, Shopify, UX' },
@@ -84,7 +83,7 @@ export default function PixelPalsHero({
             <ul>
               {indicators.map((indicator) => (
                 <li key={indicator}>
-                  <img src={successDot.src} alt="" width="18" height="18" />
+                  <img src="/success-dot.svg" alt="" width="18" height="18" />
                   <span>{indicator}</span>
                 </li>
               ))}

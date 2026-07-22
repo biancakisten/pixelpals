@@ -1,0 +1,240 @@
+.why-pixel-pals {
+  --why-purple: #3b096d;
+  --why-heading: #0f172a;
+  --why-text: #64748b;
+  --why-border: #e2e8f0;
+  --why-background: #f8fafc;
+  --why-green: #22c55e;
+  --why-blue: #2563eb;
+
+  width: 100%;
+  padding: 100px 24px;
+  background: var(--why-background);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.why-pixel-pals,
+.why-pixel-pals * {
+  box-sizing: border-box;
+}
+
+.why-pixel-pals__container {
+  display: grid;
+  grid-template-columns: minmax(0, 610px) minmax(0, 650px);
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  width: min(1440px, 100%);
+  margin: 0 auto;
+}
+
+.why-pixel-pals__visual {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 32px;
+  background:
+    linear-gradient(
+      141deg,
+      #0f172a 0%,
+      #172554 25%,
+      #2563eb 100%
+    );
+  box-shadow: 0 28px 70px -26px rgba(15, 23, 42, 0.18);
+}
+
+.why-pixel-pals__visual-badge,
+.why-pixel-pals__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eff6ff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.why-pixel-pals__visual-badge {
+  margin-bottom: 14px;
+  color: var(--why-blue);
+}
+
+.why-pixel-pals__visual h2 {
+  width: 100%;
+  max-width: 546px;
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-size: clamp(30px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.why-pixel-pals__proof-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-pixel-pals__proof {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.why-pixel-pals__check,
+.why-pixel-pals__benefit-check {
+  flex: 0 0 auto;
+  color: var(--why-green);
+  font-weight: 700;
+}
+
+.why-pixel-pals__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.why-pixel-pals__heading {
+  width: 100%;
+}
+
+.why-pixel-pals__eyebrow {
+  margin-bottom: 14px;
+  color: var(--why-purple);
+}
+
+.why-pixel-pals__heading h2 {
+  margin: 0;
+  color: var(--why-heading);
+  font-size: clamp(36px, 4vw, 44px);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+}
+
+.why-pixel-pals__heading p {
+  margin: 14px 0 0;
+  color: var(--why-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.why-pixel-pals__benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  width: 100%;
+}
+
+.why-pixel-pals__benefit {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--why-border);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--why-heading);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+@media (max-width: 1150px) {
+  .why-pixel-pals {
+    padding: 80px 32px;
+  }
+
+  .why-pixel-pals__container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    width: min(760px, 100%);
+  }
+
+  .why-pixel-pals__visual {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .why-pixel-pals__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-pixel-pals {
+    padding: 64px 20px;
+  }
+
+  .why-pixel-pals__container {
+    gap: 38px;
+  }
+
+  .why-pixel-pals__visual {
+    padding: 26px;
+    border-radius: 26px;
+  }
+
+  .why-pixel-pals__visual h2 {
+    font-size: 30px;
+  }
+
+  .why-pixel-pals__heading h2 {
+    font-size: 34px;
+  }
+
+  .why-pixel-pals__heading p {
+    font-size: 16px;
+  }
+
+  .why-pixel-pals__benefits {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .why-pixel-pals__benefit {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-pixel-pals {
+    padding-inline: 16px;
+  }
+
+  .why-pixel-pals__visual {
+    padding: 22px;
+  }
+
+  .why-pixel-pals__visual h2 {
+    font-size: 27px;
+  }
+
+  .why-pixel-pals__heading h2 {
+    font-size: 30px;
+  }
+
+  .why-pixel-pals__proof {
+    font-size: 14px;
+  }
+}
