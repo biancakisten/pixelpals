@@ -3,7 +3,6 @@ import HomeBanner from '../components/HomeBanner';
 import AIPlatform from '../components/AIPlatform';
 import WhyPixelPals from '../components/WhyPixelPals';
 import ProcessSection from '../components/ProcessSection';
-import EndPageBanner from '../components/EndPageBanner';
 import Footer from '../components/Footer';
 
 export default function HomePage() {
@@ -14,7 +13,6 @@ export default function HomePage() {
       <AIPlatform />
       <WhyPixelPals />
       <ProcessSection />
-      <EndPageBanner platformHref="#ai-platform" />
       <Footer />
     </main>
   );

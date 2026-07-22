@@ -4,11 +4,11 @@
   --end-banner-dark: #0f172a;
   --end-banner-blue: #2563eb;
   --end-banner-border: #e2e8f0;
-  --end-banner-background: #f8fafc;
+  --end-banner-background: #f1f5ff;
 
   width: 100%;
   padding: 90px 24px;
-  background: var(--end-banner-background);
+  background: linear-gradient(180deg, #eef4ff 0%, #f7f9ff 100%);
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -34,12 +34,12 @@
   border-radius: 34px;
   background:
     linear-gradient(
-      167deg,
+      145deg,
       #2563eb 0%,
-      #1d4ed8 28%,
-      #22c55e 100%
+      #1d4ed8 30%,
+      #3b096d 100%
     );
-  box-shadow: 0 28px 68px -26px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 30px 72px -26px rgba(37, 99, 235, 0.32);
   text-align: center;
 }
 

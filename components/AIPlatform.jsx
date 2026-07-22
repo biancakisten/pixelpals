@@ -114,6 +114,32 @@ export default function AIPlatform() {
             </article>
           ))}
         </div>
+
+        <div className="ai-platform__banner" data-node-id="60:181">
+          <div className="ai-platform__banner-copy">
+            <span className="ai-platform__banner-badge">Built for momentum</span>
+            <h3>Take the next step with an AI workflow that fits your team.</h3>
+            <p>
+              Launch smarter support, stronger proposals and faster execution
+              with a platform designed to scale with your goals.
+            </p>
+          </div>
+
+          <div className="ai-platform__banner-actions">
+            <a
+              className="ai-platform__banner-button ai-platform__banner-button--primary"
+              href="#ai-platform"
+            >
+              Start Your Project
+            </a>
+            <a
+              className="ai-platform__banner-button ai-platform__banner-button--secondary"
+              href="#why-pixel-pals"
+            >
+              See Why Pixel Pals
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
