@@ -23,7 +23,7 @@
 
 .why-pixel-pals__container {
   display: grid;
-  grid-template-columns: minmax(0, 560px) minmax(0, 560px);
+  grid-template-columns: minmax(0, 600px) minmax(0, 600px);
   align-items: center;
   justify-content: center;
   gap: 56px;
@@ -159,7 +159,7 @@
 .why-pixel-pals__benefit {
   display: flex;
   align-items: flex-start;
-  min-height: 76px;
+  min-height: 50px;
   width: 100%;
   gap: 10px;
   padding: 16px 18px;
