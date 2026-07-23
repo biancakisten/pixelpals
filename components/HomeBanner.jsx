@@ -92,17 +92,6 @@ export default function HomeBanner() {
                 {solution.description}
               </p>
 
-              <div
-                className="home-banner__tags"
-                aria-label={`${solution.title} services`}
-              >
-                {solution.tags.map((tag) => (
-                  <span className="home-banner__tag" key={tag}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
               <p className="home-banner__status">{solution.status}</p>
             </article>
           ))}

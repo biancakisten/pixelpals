@@ -5,7 +5,7 @@ const aiProducts = [
     title: 'AI Resume Assistant',
     description:
       'Score, optimize and prepare resumes for stronger applications.',
-    status: 'Available',
+    status: 'Early Access Preview',
     available: true,
     href: '#',
   },
@@ -94,7 +94,9 @@ export default function AIPlatform() {
                     ? 'ai-platform__button--primary'
                     : 'ai-platform__button--secondary'
                 }`}
-                href={product.href}
+                href={product.available ? product.href : undefined}
+                aria-disabled={!product.available}
+                tabIndex={product.available ? undefined : -1}
               >
                 <span>Explore Tool</span>
                 <span className="ai-platform__arrow" aria-hidden="true">

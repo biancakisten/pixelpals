@@ -1,8 +1,8 @@
 import './EndPageBanner.css';
 
 export default function EndPageBanner({
-  projectHref = '#',
-  platformHref = '#',
+  projectHref = 'mailto:hello@pixelpals.studio',
+  platformHref = '#ai-platform',
 }) {
   return (
     <section

@@ -14,7 +14,7 @@ const indicators = [
 ];
 
 export default function PixelPalsHero({
-  startProjectHref = '#start-project',
+  startProjectHref = 'mailto:hello@pixelpals.studio',
   aiPlatformHref = '#ai-platform',
 }) {
   return (
@@ -57,13 +57,13 @@ export default function PixelPalsHero({
         </div>
 
         <aside className="pp-product" aria-label="Pixel Pals AI product preview" data-node-id="63:2">
-          <div className="pp-product__header" data-node-id="63:3">
+          <a className="pp-product__header" href={aiPlatformHref} data-node-id="63:3">
             <div className="pp-product__mark" aria-hidden="true" data-node-id="63:4" />
             <div>
               <p className="pp-product__eyebrow">Pixel Pals AI</p>
               <h2>AI Resume Assistant</h2>
             </div>
-          </div>
+          </a>
 
           <div className="pp-product__scores" data-node-id="63:8">
             <article className="pp-score-card">

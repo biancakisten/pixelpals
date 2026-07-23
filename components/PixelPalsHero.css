@@ -116,7 +116,7 @@
   box-shadow: 0 28px 70px rgba(233, 230, 241, 0.72);
 }
 
-.pp-product__header { display: flex; align-items: flex-start; gap: 14px; }
+.pp-product__header { display: flex; align-items: flex-start; gap: 14px; color: inherit; text-decoration: none; }
 .pp-product__mark { flex: 0 0 48px; width: 48px; height: 48px; border-radius: 14px; background: var(--pp-purple); }
 .pp-product__eyebrow { color: var(--pp-purple); font-size: 13px; font-weight: 600; line-height: 14px; }
 .pp-product__header h2 { margin-top: 3px; font-size: 24px; font-weight: 700; line-height: 26px; }

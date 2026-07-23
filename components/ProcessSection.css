@@ -84,7 +84,7 @@
 
 .process-section__number--active {
   background: var(--process-light-blue);
-  color: var(--process-blue);
+  color: #3b096d;
 }
 
 .process-section__card h3 {
