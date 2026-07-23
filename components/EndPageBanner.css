@@ -4,7 +4,7 @@
   --end-banner-dark: #0f172a;
   --end-banner-blue: #2563eb;
   --end-banner-border: #e2e8f0;
-  --end-banner-background: #f9f58e;
+  --end-banner-background: #ffffff;
 
   width: 100%;
   padding: 90px 24px;
@@ -32,13 +32,7 @@
   padding: 56px 64px;
   overflow: hidden;
   border-radius: 34px;
-  background:
-    linear-gradient(
-      145deg,
-      #2563eb 0%,
-      #1d4ed8 30%,
-      #3b096d 100%
-    );
+  background: #f9f58e;
   box-shadow: 0 30px 72px -26px rgba(37, 99, 235, 0.32);
   text-align: center;
 }
