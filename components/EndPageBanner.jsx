@@ -24,7 +24,7 @@ export default function EndPageBanner({
 
           <div className="end-page-banner__actions">
             <a
-              className="end-page-banner__button end-page-banner__button--light"
+              className="end-page-banner__button pp-button pp-button--secondary"
               href={projectHref}
             >
               <span>Start Your Project</span>
@@ -34,7 +34,7 @@ export default function EndPageBanner({
             </a>
 
             <a
-              className="end-page-banner__button end-page-banner__button--primary"
+              className="end-page-banner__button pp-button pp-button--primary"
               href={platformHref}
             >
               <span>Explore the AI Platform</span>

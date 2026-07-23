@@ -4,11 +4,11 @@
   --end-banner-dark: #0f172a;
   --end-banner-blue: #2563eb;
   --end-banner-border: #e2e8f0;
-  --end-banner-background: #f1f5ff;
+  --end-banner-background: #f9f58e;
 
   width: 100%;
   padding: 90px 24px;
-  background: linear-gradient(180deg, #eef4ff 0%, #f7f9ff 100%);
+  background: var(--end-banner-background);
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -64,6 +64,7 @@
 
 .end-page-banner__actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 14px;
@@ -75,17 +76,15 @@
   justify-content: center;
   gap: 8px;
   padding: 14px 22px;
-  border-radius: 14px;
+  border-radius: 16px;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
   white-space: nowrap;
   transition:
-    transform 180ms ease,
-    background-color 180ms ease,
-    border-color 180ms ease,
-    box-shadow 180ms ease;
+    transform 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .end-page-banner__button:hover {
@@ -93,34 +92,30 @@
 }
 
 .end-page-banner__button:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.5);
+  outline: 3px solid rgb(59, 9, 109);
   outline-offset: 3px;
 }
 
-.end-page-banner__button--light {
-  border: 1px solid var(--end-banner-border);
+.end-page-banner__button--secondary {
   background: #ffffff;
-  color: var(--end-banner-dark);
+  border-color: #A99DC6;
+  color: #0f172a;
+  box-shadow: 0 10px 24px -18px rgba(15, 23, 42, 0.16);
 }
 
-.end-page-banner__button--light:hover {
-  background: #f8fafc;
-}
-
-.end-page-banner__button--light .end-page-banner__arrow {
-  color: var(--end-banner-blue);
+.end-page-banner__button--secondary .end-page-banner__arrow {
+  color: #3b096d;
 }
 
 .end-page-banner__button--primary {
-  border: 1px solid var(--end-banner-blue);
-  background: var(--end-banner-blue);
+  background: #3b096d;
+  border-color: #2563eb;
   color: #ffffff;
-  box-shadow: 0 14px 28px -16px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 18px 32px -18px rgba(15, 23, 42, 0.22);
 }
 
 .end-page-banner__button--primary:hover {
-  border-color: #1d4ed8;
-  background: #1d4ed8;
+  background: #2d0651;
 }
 
 .end-page-banner__arrow {
