@@ -1,6 +1,7 @@
 .pp-hero,
 .pp-hero * {
   box-sizing: border-box;
+  color: #3b096d !important;
 }
 
 .pp-hero {
