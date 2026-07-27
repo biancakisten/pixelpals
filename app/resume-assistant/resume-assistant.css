@@ -184,7 +184,7 @@
 .resume-page__features {
   width: min(1440px, 100%);
   margin: 0 auto;
-  padding: 0 72px;
+  padding: 0 72px 80px;
 }
 
 .resume-page__feature-intro {
@@ -194,6 +194,7 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -237,11 +238,16 @@
   padding: 8px 12px;
   border-radius: 999px;
   background: #f1f5f9;
-  color: #3b096d;
+  color: #475569;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5;
   white-space: nowrap;
+}
+
+.resume-page__feature-number--active {
+  background: #eff6ff;
+  color: #3b096d;
 }
 
 .resume-page__feature-card h3 {
