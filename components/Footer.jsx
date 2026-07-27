@@ -8,7 +8,7 @@ const serviceLinks = [
 ];
 
 const aiLinks = [
-  { label: 'Resume Assistant' },
+  { label: 'Resume Assistant', href: '/resume-assistant' },
   { label: 'Website Audit' },
   { label: 'SEO Assistant' },
   { label: 'Content Generator' },
@@ -29,7 +29,11 @@ function FooterColumn({ title, links }) {
       <ul>
         {links.map((link) => (
           <li key={link.label}>
-            <span>{link.label}</span>
+            {link.href ? (
+              <a href={link.href}>{link.label}</a>
+            ) : (
+              <span>{link.label}</span>
+            )}
           </li>
         ))}
       </ul>
