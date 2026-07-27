@@ -65,8 +65,8 @@ export default function Footer() {
 
             <p className="site-footer__detail">
               Email:{' '}
-              <a href="mailto:hello@pixelpals.studio">
-                hello@pixelpals.studio
+              <a href="mailto:bianca.kisten@pixelpals.co.za">
+                bianca.kisten@pixelpals.co.za
               </a>
             </p>
           </div>

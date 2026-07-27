@@ -14,7 +14,7 @@ const indicators = [
 ];
 
 export default function PixelPalsHero({
-  startProjectHref = 'mailto:hello@pixelpals.studio',
+  startProjectHref = 'mailto:bianca.kisten@pixelpals.co.za',
   aiPlatformHref = '#ai-platform',
 }) {
   return (
