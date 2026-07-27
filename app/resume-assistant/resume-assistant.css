@@ -20,60 +20,6 @@
   box-sizing: border-box;
 }
 
-.resume-page__header {
-  display: flex;
-  width: min(1440px, 100%);
-  height: 108px;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 72px;
-  background: #fff;
-}
-
-.resume-page__brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  color: var(--heading);
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.45;
-  text-decoration: none;
-}
-
-.resume-page__mark {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
-  grid-template-columns: repeat(2, 8px);
-  grid-template-rows: repeat(2, 8px);
-  place-content: center;
-  gap: 5px;
-  border-radius: 12px;
-  background: var(--purple);
-}
-
-.resume-page__mark span {
-  border-radius: 2px;
-}
-
-.resume-page__mark span:nth-child(1) {
-  background: #4dbff2;
-}
-
-.resume-page__mark span:nth-child(2) {
-  background: #f28c26;
-}
-
-.resume-page__mark span:nth-child(3) {
-  background: #f2408c;
-}
-
-.resume-page__mark span:nth-child(4) {
-  background: #f2bf1a;
-}
-
 .resume-page__hero {
   min-height: 678px;
   background: var(--hero-background);
@@ -167,16 +113,24 @@
   height: 563px;
   overflow: hidden;
   border-radius: 32px;
-  background: linear-gradient(115deg, #2e0861 0%, #47389e 100%);
+  background: linear-gradient(113.3826deg, #2e0861 0%, #47389e 100%);
 }
 
-.resume-page__cv {
+.resume-page__cv-viewport {
   position: absolute;
   top: 46px;
   left: 42px;
   width: 397px;
+  height: 472px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 22px;
+}
+
+.resume-page__cv {
+  display: block;
+  width: 397px;
   height: 563px;
-  border-radius: 22px 22px 0 0;
   object-fit: cover;
   object-position: top;
 }
@@ -197,24 +151,33 @@
 }
 
 .resume-page__score span {
-  margin-bottom: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   color: var(--text);
   font-size: 10px;
   font-weight: 700;
+  line-height: 1.45;
   white-space: nowrap;
 }
 
 .resume-page__score strong {
+  position: absolute;
+  top: 49px;
+  left: 20px;
   color: var(--purple);
   font-size: 42px;
-  line-height: 1.2;
+  line-height: 1.45;
 }
 
 .resume-page__score small {
-  margin-top: 5px;
+  position: absolute;
+  top: 108px;
+  left: 20px;
   color: var(--green);
   font-size: 12px;
   font-weight: 600;
+  line-height: 1.45;
 }
 
 .resume-page__features {
@@ -364,7 +327,6 @@
 }
 
 @media (max-width: 1180px) {
-  .resume-page__header,
   .resume-page__hero-inner,
   .resume-page__features {
     padding-right: 40px;
@@ -376,15 +338,20 @@
     gap: 48px;
   }
 
-  .resume-page__preview,
-  .resume-page__cv {
+  .resume-page__preview {
     height: 520px;
   }
 
+  .resume-page__cv-viewport {
+    top: 8.17%;
+    left: 6.74%;
+    width: 63.72%;
+    height: 83.84%;
+  }
+
   .resume-page__cv {
-    top: 40px;
-    left: 34px;
-    width: 64%;
+    width: 100%;
+    height: 119.28%;
   }
 
   .resume-page__score {
@@ -420,9 +387,14 @@
     justify-self: center;
   }
 
-  .resume-page__cv {
+  .resume-page__cv-viewport {
     top: 46px;
     left: 42px;
+    width: 397px;
+    height: 472px;
+  }
+
+  .resume-page__cv {
     width: 397px;
     height: 563px;
   }
@@ -449,11 +421,6 @@
 }
 
 @media (max-width: 640px) {
-  .resume-page__header {
-    height: 88px;
-    padding: 0 20px;
-  }
-
   .resume-page__hero-inner,
   .resume-page__features {
     padding-right: 20px;
@@ -477,12 +444,17 @@
     border-radius: 24px;
   }
 
-  .resume-page__cv {
+  .resume-page__cv-viewport {
     top: 7.5%;
     left: 6.75%;
     width: 63.7%;
-    height: 100%;
-    border-radius: 16px 16px 0 0;
+    height: 83.84%;
+    border-radius: 16px;
+  }
+
+  .resume-page__cv {
+    width: 100%;
+    height: 119.28%;
   }
 
   .resume-page__score {
@@ -533,15 +505,10 @@
 }
 
 @media (max-width: 400px) {
-  .resume-page__header,
   .resume-page__hero-inner,
   .resume-page__features {
     padding-right: 16px;
     padding-left: 16px;
-  }
-
-  .resume-page__brand {
-    font-size: 15px;
   }
 
   .resume-page__hero h1 {

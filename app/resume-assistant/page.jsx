@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import './resume-assistant.css';
 
 export const metadata = {
@@ -35,30 +34,25 @@ const developmentNotes = [
   'Private and user-controlled editing',
 ];
 
-function PixelPalsMark() {
-  return (
-    <span className="resume-page__mark" aria-hidden="true">
-      <span />
-      <span />
-      <span />
-      <span />
-    </span>
-  );
-}
-
 function ResumePreview() {
   return (
-    <div className="resume-page__preview">
-      <Image
-        className="resume-page__cv"
-        src="/resume-preview.png"
-        alt="Preview of a professionally formatted CV"
-        width={2532}
-        height={3594}
-        priority
-      />
+    <div className="resume-page__preview" data-node-id="163:25">
+      <div className="resume-page__cv-viewport" data-node-id="163:26">
+        <Image
+          className="resume-page__cv"
+          src="/resume-preview.png"
+          alt="Preview of a professionally formatted CV"
+          width={2532}
+          height={3594}
+          priority
+        />
+      </div>
 
-      <div className="resume-page__score" aria-label="CV match score: 87 percent">
+      <div
+        className="resume-page__score"
+        aria-label="CV match score: 87 percent"
+        data-node-id="163:40"
+      >
         <span>CV MATCH SCORE</span>
         <strong>87%</strong>
         <small>↑ 18 points</small>
@@ -70,13 +64,6 @@ function ResumePreview() {
 export default function ResumeAssistantPage() {
   return (
     <div className="resume-page">
-      <header className="resume-page__header">
-        <Link className="resume-page__brand" href="/" aria-label="Pixel Pals home">
-          <PixelPalsMark />
-          <span>PIXEL PALS</span>
-        </Link>
-      </header>
-
       <main>
         <section className="resume-page__hero" aria-labelledby="resume-page-title">
           <div className="resume-page__hero-inner">
