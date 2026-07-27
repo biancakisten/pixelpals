@@ -83,6 +83,7 @@ export default function AIPlatform() {
               </span>
 
               <h3>{product.title}</h3>
+              <br />
 
               <p className="ai-platform__description">
                 {product.description}
@@ -110,6 +111,7 @@ export default function AIPlatform() {
         <div className="ai-platform__banner" data-node-id="60:181">
           <div className="ai-platform__banner-copy">
             <h3>More AI Products Coming Soon</h3>
+            <br />
             <p>A growing suite of intelligent tools for modern teams.</p>
           </div>
         </div>

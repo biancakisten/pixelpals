@@ -84,6 +84,7 @@ export default function HomeBanner() {
               <SolutionIcon type={solution.icon} />
 
               <h3>{solution.title}</h3>
+              <br />
 
               <p className="home-banner__description">
                 {solution.description}

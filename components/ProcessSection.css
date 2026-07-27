@@ -67,11 +67,17 @@
   background: #ffffff;
 }
 
+.process-section__step-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
 .process-section__number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
   padding: 8px 12px;
   border-radius: 999px;
   background: var(--process-light-grey);
@@ -88,7 +94,7 @@
 }
 
 .process-section__card h3 {
-  margin: 0 0 12px;
+  margin: 0;
   color: var(--process-heading);
   font-size: 21px;
   font-weight: 700;
