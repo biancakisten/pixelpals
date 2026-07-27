@@ -53,19 +53,15 @@ export default function ProcessSection() {
         <div className="process-section__timeline">
           {processSteps.map((step) => (
             <article className="process-section__card" key={step.number}>
-              <div className="process-section__step-heading">
-                <span
-                  className={`process-section__number ${
-                    step.active ? 'process-section__number--active' : ''
-                  }`}
-                >
-                  {step.number}
-                </span>
+              <span
+                className={`process-section__number ${
+                  step.active ? 'process-section__number--active' : ''
+                }`}
+              >
+                {step.number}
+              </span>
 
-                <h3>{step.title}</h3>
-                <br />
-              </div>
-
+              <h3>{step.title}</h3>
               <p>{step.description}</p>
             </article>
           ))}
