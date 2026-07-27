@@ -4,10 +4,10 @@
   --end-banner-dark: #0f172a;
   --end-banner-blue: #2563eb;
   --end-banner-border: #e2e8f0;
-  --end-banner-background: #f8fafc;
+  --end-banner-background: #ffffff;
 
   width: 100%;
-  padding: 90px 50px;
+  padding: 0 50px 90px;
   background: var(--end-banner-background);
   font-family: Inter, Arial, sans-serif;
 }
@@ -123,7 +123,7 @@
 
 @media (max-width: 900px) {
   .end-page-banner {
-    padding: 80px 32px;
+    padding: 0 32px 80px;
   }
 
   .end-page-banner__panel {
@@ -138,7 +138,7 @@
 
 @media (max-width: 767px) {
   .end-page-banner {
-    padding: 64px 20px;
+    padding: 0 20px 64px;
   }
 
   .end-page-banner__panel {

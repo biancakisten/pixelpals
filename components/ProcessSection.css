@@ -26,8 +26,8 @@
 
 .process-section__heading {
   width: min(820px, 100%);
-  margin: 0 auto 52px;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 0 50px;
   text-align: center;
 }
 
@@ -125,7 +125,7 @@
   }
 
   .process-section__heading {
-    margin-bottom: 38px;
+    padding-bottom: 38px;
   }
 
   .process-section__heading h2 {

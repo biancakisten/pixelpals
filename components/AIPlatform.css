@@ -24,7 +24,8 @@
 
 .ai-platform__heading {
   width: min(760px, 100%);
-  margin: 0 auto 48px;
+  margin: 0 auto;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -206,7 +207,7 @@
   }
 
   .ai-platform__heading {
-    margin-bottom: 38px;
+    padding-bottom: 38px;
   }
 
   .ai-platform__heading h2 {
