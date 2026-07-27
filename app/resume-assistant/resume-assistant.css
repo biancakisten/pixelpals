@@ -27,20 +27,21 @@
 
 .resume-page__hero-inner {
   display: grid;
-  width: min(1440px, 100%);
+  width: min(1511px, 100%);
   min-height: 678px;
-  grid-template-columns: minmax(0, 558px) minmax(0, 623px);
+  grid-template-columns: minmax(0, 558px) minmax(0, 602px);
   align-items: start;
-  gap: 90px;
+  justify-content: space-between;
+  gap: 48px;
   margin: 0 auto;
-  padding: 0 72px;
+  padding: 0 105px;
 }
 
 .resume-page__hero-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 72px;
+  padding-top: 109px;
 }
 
 .resume-page__badge {
@@ -57,11 +58,10 @@
   line-height: 1.45;
 }
 
-.resume-page__badge > span {
+.resume-page__badge > img {
+  display: block;
   width: 8px;
   height: 8px;
-  border-radius: 50%;
-  background: var(--green);
 }
 
 .resume-page__eyebrow {
@@ -100,62 +100,62 @@
   font-weight: 500;
 }
 
-.resume-page__release-note span {
+.resume-page__release-note img {
+  display: block;
   width: 7px;
   height: 7px;
-  border-radius: 50%;
-  background: var(--purple);
 }
 
 .resume-page__preview {
   position: relative;
+  container-type: inline-size;
   width: 100%;
-  height: 563px;
+  height: auto;
+  aspect-ratio: 602 / 563;
+  margin-top: 47px;
   overflow: hidden;
   border-radius: 32px;
-  background: linear-gradient(113.3826deg, #2e0861 0%, #47389e 100%);
+  background: linear-gradient(114.6201deg, #2e0861 0%, #47389e 100%);
 }
 
 .resume-page__cv-viewport {
   position: absolute;
-  top: 46px;
-  left: 42px;
-  width: 397px;
-  height: 472px;
+  top: 7.6412cqw;
+  left: 6.9767cqw;
+  width: 87.0432cqw;
+  height: 78.4053cqw;
   overflow-x: hidden;
   overflow-y: auto;
-  border-radius: 22px;
+  border-radius: clamp(16px, 3.6545cqw, 22px);
 }
 
 .resume-page__cv {
   display: block;
-  width: 397px;
-  height: 563px;
+  width: 87.0432cqw;
+  height: 123.4219cqw;
+  max-width: none;
   object-fit: cover;
   object-position: top;
 }
 
 .resume-page__score {
   position: absolute;
-  top: 376px;
-  left: 403px;
-  display: flex;
-  width: 150px;
-  height: 142px;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  border-radius: 20px;
+  top: 62.4585cqw;
+  left: 72.9236cqw;
+  width: 24.9169cqw;
+  height: 23.588cqw;
+  padding: 0;
+  border-radius: clamp(14px, 3.3223cqw, 20px);
   background: #fff;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
 }
 
 .resume-page__score span {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 14.0845%;
+  left: 13.3333%;
   color: var(--text);
-  font-size: 10px;
+  font-size: clamp(8px, 1.6611cqw, 10px);
   font-weight: 700;
   line-height: 1.45;
   white-space: nowrap;
@@ -163,21 +163,22 @@
 
 .resume-page__score strong {
   position: absolute;
-  top: 49px;
-  left: 20px;
+  top: 34.507%;
+  left: 13.3333%;
   color: var(--purple);
-  font-size: 42px;
+  font-size: clamp(28px, 6.9767cqw, 42px);
   line-height: 1.45;
 }
 
 .resume-page__score small {
   position: absolute;
-  top: 108px;
-  left: 20px;
+  top: 76.0563%;
+  left: 13.3333%;
   color: var(--green);
-  font-size: 12px;
+  font-size: clamp(9px, 1.9934cqw, 12px);
   font-weight: 600;
   line-height: 1.45;
+  white-space: nowrap;
 }
 
 .resume-page__features {
@@ -338,29 +339,6 @@
     gap: 48px;
   }
 
-  .resume-page__preview {
-    height: 520px;
-  }
-
-  .resume-page__cv-viewport {
-    top: 8.17%;
-    left: 6.74%;
-    width: 63.72%;
-    height: 83.84%;
-  }
-
-  .resume-page__cv {
-    width: 100%;
-    height: 119.28%;
-  }
-
-  .resume-page__score {
-    top: auto;
-    right: 28px;
-    bottom: 32px;
-    left: auto;
-  }
-
   .resume-page__development {
     width: calc(100% - 80px);
     gap: 48px;
@@ -382,28 +360,9 @@
   }
 
   .resume-page__preview {
-    width: min(623px, 100%);
-    height: 563px;
+    width: min(602px, 100%);
+    margin-top: 0;
     justify-self: center;
-  }
-
-  .resume-page__cv-viewport {
-    top: 46px;
-    left: 42px;
-    width: 397px;
-    height: 472px;
-  }
-
-  .resume-page__cv {
-    width: 397px;
-    height: 563px;
-  }
-
-  .resume-page__score {
-    top: 376px;
-    right: auto;
-    bottom: auto;
-    left: 403px;
   }
 
   .resume-page__feature-grid {
@@ -440,36 +399,7 @@
   }
 
   .resume-page__preview {
-    height: min(88vw, 500px);
     border-radius: 24px;
-  }
-
-  .resume-page__cv-viewport {
-    top: 7.5%;
-    left: 6.75%;
-    width: 63.7%;
-    height: 83.84%;
-    border-radius: 16px;
-  }
-
-  .resume-page__cv {
-    width: 100%;
-    height: 119.28%;
-  }
-
-  .resume-page__score {
-    top: auto;
-    right: 6%;
-    bottom: 8%;
-    left: auto;
-    width: 132px;
-    height: 126px;
-    padding: 16px;
-    border-radius: 16px;
-  }
-
-  .resume-page__score strong {
-    font-size: 36px;
   }
 
   .resume-page__feature-intro {
@@ -513,20 +443,6 @@
 
   .resume-page__hero h1 {
     font-size: 36px;
-  }
-
-  .resume-page__score {
-    width: 118px;
-    height: 116px;
-    padding: 14px;
-  }
-
-  .resume-page__score span {
-    font-size: 9px;
-  }
-
-  .resume-page__score strong {
-    font-size: 32px;
   }
 
   .resume-page__development {

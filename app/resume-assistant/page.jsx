@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Footer from '../../components/Footer';
 import './resume-assistant.css';
 
 export const metadata = {
@@ -69,7 +70,13 @@ export default function ResumeAssistantPage() {
           <div className="resume-page__hero-inner">
             <div className="resume-page__hero-copy">
               <span className="resume-page__badge">
-                <span aria-hidden="true" />
+                <Image
+                  src="/early-access-dot.svg"
+                  alt=""
+                  width={8}
+                  height={8}
+                  aria-hidden="true"
+                />
                 Early Access Preview
               </span>
 
@@ -88,7 +95,13 @@ export default function ResumeAssistantPage() {
               </p>
 
               <p className="resume-page__release-note">
-                <span aria-hidden="true" />
+                <Image
+                  src="/private-development-dot.svg"
+                  alt=""
+                  width={7}
+                  height={7}
+                  aria-hidden="true"
+                />
                 Currently in private development
               </p>
             </div>
@@ -158,6 +171,7 @@ export default function ResumeAssistantPage() {
           </ul>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
