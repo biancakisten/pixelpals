@@ -7,7 +7,7 @@ const aiProducts = [
       'Score, optimize and prepare resumes for stronger applications.',
     status: 'Early Access Preview',
     available: true,
-    href: '#',
+    href: '/resume-assistant',
   },
   {
     title: 'AI Website Audit',

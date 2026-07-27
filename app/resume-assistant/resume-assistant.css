@@ -1,0 +1,568 @@
+.resume-page {
+  --purple: #3b096d;
+  --heading: #0f172a;
+  --text: #64748b;
+  --green: #16a34a;
+  --light-green: #ecfdf5;
+  --light-purple: #f6f3fb;
+  --light-border: #e0e5f0;
+  --hero-background: #fbfcfe;
+
+  min-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  color: var(--heading);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.resume-page,
+.resume-page * {
+  box-sizing: border-box;
+}
+
+.resume-page__header {
+  display: flex;
+  width: min(1440px, 100%);
+  height: 108px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 72px;
+  background: #fff;
+}
+
+.resume-page__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--heading);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.resume-page__mark {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  grid-template-columns: repeat(2, 8px);
+  grid-template-rows: repeat(2, 8px);
+  place-content: center;
+  gap: 5px;
+  border-radius: 12px;
+  background: var(--purple);
+}
+
+.resume-page__mark span {
+  border-radius: 2px;
+}
+
+.resume-page__mark span:nth-child(1) {
+  background: #4dbff2;
+}
+
+.resume-page__mark span:nth-child(2) {
+  background: #f28c26;
+}
+
+.resume-page__mark span:nth-child(3) {
+  background: #f2408c;
+}
+
+.resume-page__mark span:nth-child(4) {
+  background: #f2bf1a;
+}
+
+.resume-page__hero {
+  min-height: 678px;
+  background: var(--hero-background);
+}
+
+.resume-page__hero-inner {
+  display: grid;
+  width: min(1440px, 100%);
+  min-height: 678px;
+  grid-template-columns: minmax(0, 558px) minmax(0, 623px);
+  align-items: start;
+  gap: 90px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.resume-page__hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 72px;
+}
+
+.resume-page__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 999px;
+  background: var(--light-green);
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.resume-page__badge > span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.resume-page__eyebrow {
+  margin: 0 0 20px;
+  color: var(--purple);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.resume-page__hero h1 {
+  max-width: 610px;
+  margin: 0 0 20px;
+  color: var(--heading);
+  font-size: clamp(44px, 3.75vw, 54px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+}
+
+.resume-page__intro {
+  max-width: 580px;
+  margin: 0 0 20px;
+  color: var(--text);
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.resume-page__release-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resume-page__release-note span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+
+.resume-page__preview {
+  position: relative;
+  width: 100%;
+  height: 563px;
+  overflow: hidden;
+  border-radius: 32px;
+  background: linear-gradient(115deg, #2e0861 0%, #47389e 100%);
+}
+
+.resume-page__cv {
+  position: absolute;
+  top: 46px;
+  left: 42px;
+  width: 397px;
+  height: 563px;
+  border-radius: 22px 22px 0 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.resume-page__score {
+  position: absolute;
+  top: 376px;
+  left: 403px;
+  display: flex;
+  width: 150px;
+  height: 142px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.resume-page__score span {
+  margin-bottom: 5px;
+  color: var(--text);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.resume-page__score strong {
+  color: var(--purple);
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.resume-page__score small {
+  margin-top: 5px;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.resume-page__features {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.resume-page__feature-intro {
+  display: flex;
+  min-height: 177px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.resume-page__feature-intro h2 {
+  max-width: 900px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.45;
+}
+
+.resume-page__feature-intro p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.resume-page__feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.resume-page__feature-card {
+  display: flex;
+  min-height: 230px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--light-border);
+  border-radius: 22px;
+  background: #fff;
+}
+
+.resume-page__feature-number {
+  padding: 10px;
+  border-radius: 10px;
+  background: #f7f5fc;
+  color: var(--purple);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.resume-page__feature-number--active {
+  background: var(--purple);
+  color: #fff;
+}
+
+.resume-page__feature-card h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.resume-page__feature-card p {
+  max-width: 360px;
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.resume-page__development {
+  display: grid;
+  width: calc(min(1440px, 100%) - 144px);
+  min-height: 300px;
+  grid-template-columns: minmax(0, 560px) minmax(0, 450px);
+  align-items: center;
+  justify-content: space-between;
+  gap: 72px;
+  margin: 47px auto 40px;
+  padding: 42px 44px;
+  border-radius: 28px;
+  background: var(--light-purple);
+}
+
+.resume-page__development-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resume-page__development-eyebrow {
+  margin: 0;
+  color: var(--purple);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.resume-page__development h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.resume-page__development-copy > p:last-child {
+  margin: 0;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.resume-page__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-page__checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.resume-page__checklist li span {
+  display: inline-flex;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--light-green);
+  color: var(--green);
+}
+
+@media (max-width: 1180px) {
+  .resume-page__header,
+  .resume-page__hero-inner,
+  .resume-page__features {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .resume-page__hero-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(460px, 1fr);
+    gap: 48px;
+  }
+
+  .resume-page__preview,
+  .resume-page__cv {
+    height: 520px;
+  }
+
+  .resume-page__cv {
+    top: 40px;
+    left: 34px;
+    width: 64%;
+  }
+
+  .resume-page__score {
+    top: auto;
+    right: 28px;
+    bottom: 32px;
+    left: auto;
+  }
+
+  .resume-page__development {
+    width: calc(100% - 80px);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .resume-page__hero {
+    padding-bottom: 56px;
+  }
+
+  .resume-page__hero-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .resume-page__hero-copy {
+    padding-top: 56px;
+  }
+
+  .resume-page__preview {
+    width: min(623px, 100%);
+    height: 563px;
+    justify-self: center;
+  }
+
+  .resume-page__cv {
+    top: 46px;
+    left: 42px;
+    width: 397px;
+    height: 563px;
+  }
+
+  .resume-page__score {
+    top: 376px;
+    right: auto;
+    bottom: auto;
+    left: 403px;
+  }
+
+  .resume-page__feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .resume-page__feature-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .resume-page__development {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .resume-page__header {
+    height: 88px;
+    padding: 0 20px;
+  }
+
+  .resume-page__hero-inner,
+  .resume-page__features {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .resume-page__hero-copy {
+    padding-top: 44px;
+  }
+
+  .resume-page__hero h1 {
+    font-size: clamp(38px, 11vw, 48px);
+  }
+
+  .resume-page__intro {
+    font-size: 17px;
+  }
+
+  .resume-page__preview {
+    height: min(88vw, 500px);
+    border-radius: 24px;
+  }
+
+  .resume-page__cv {
+    top: 7.5%;
+    left: 6.75%;
+    width: 63.7%;
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .resume-page__score {
+    top: auto;
+    right: 6%;
+    bottom: 8%;
+    left: auto;
+    width: 132px;
+    height: 126px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .resume-page__score strong {
+    font-size: 36px;
+  }
+
+  .resume-page__feature-intro {
+    min-height: auto;
+    padding: 64px 0 40px;
+  }
+
+  .resume-page__feature-intro h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .resume-page__feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-page__feature-card,
+  .resume-page__feature-card:last-child {
+    min-height: auto;
+    grid-column: auto;
+  }
+
+  .resume-page__development {
+    width: calc(100% - 40px);
+    margin-top: 40px;
+    padding: 34px 26px;
+    border-radius: 24px;
+  }
+
+  .resume-page__development h2 {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 400px) {
+  .resume-page__header,
+  .resume-page__hero-inner,
+  .resume-page__features {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .resume-page__brand {
+    font-size: 15px;
+  }
+
+  .resume-page__hero h1 {
+    font-size: 36px;
+  }
+
+  .resume-page__score {
+    width: 118px;
+    height: 116px;
+    padding: 14px;
+  }
+
+  .resume-page__score span {
+    font-size: 9px;
+  }
+
+  .resume-page__score strong {
+    font-size: 32px;
+  }
+
+  .resume-page__development {
+    width: calc(100% - 32px);
+  }
+}
