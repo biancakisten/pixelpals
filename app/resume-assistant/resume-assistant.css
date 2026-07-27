@@ -231,17 +231,17 @@
 }
 
 .resume-page__feature-number {
-  padding: 10px;
-  border-radius: 10px;
-  background: #f7f5fc;
-  color: var(--purple);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.resume-page__feature-number--active {
-  background: var(--purple);
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #3b096d;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
 .resume-page__feature-card h3 {

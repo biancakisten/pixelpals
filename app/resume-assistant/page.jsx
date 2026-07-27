@@ -127,13 +127,7 @@ export default function ResumeAssistantPage() {
           <div className="resume-page__feature-grid">
             {features.map((feature) => (
               <article className="resume-page__feature-card" key={feature.number}>
-                <span
-                  className={`resume-page__feature-number ${
-                    feature.number === '01'
-                      ? 'resume-page__feature-number--active'
-                      : ''
-                  }`}
-                >
+                <span className="resume-page__feature-number">
                   {feature.number}
                 </span>
                 <h3>{feature.title}</h3>
