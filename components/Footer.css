@@ -35,11 +35,19 @@
 }
 
 .site-footer__logo {
+  display: inline-block;
   margin: 0 0 16px;
   color: var(--footer-heading);
   font-size: 28px;
   font-weight: 700;
   line-height: 1.18;
+  text-decoration: none;
+}
+
+.site-footer__logo:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
 }
 
 .site-footer__tagline {

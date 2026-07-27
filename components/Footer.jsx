@@ -47,7 +47,9 @@ export default function Footer() {
       <div className="site-footer__container">
         <div className="site-footer__content">
           <div className="site-footer__brand">
-            <p className="site-footer__logo">Pixel Pals</p>
+            <a className="site-footer__logo" href="/" aria-label="Pixel Pals home">
+              Pixel Pals
+            </a>
 
             <p className="site-footer__tagline">
               <span>Modern websites.</span>
