@@ -63,6 +63,7 @@ export default function ProcessSection() {
                 </span>
 
                 <h3>{step.title}</h3>
+                <br />
               </div>
 
               <p>{step.description}</p>
