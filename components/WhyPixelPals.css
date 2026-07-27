@@ -11,7 +11,7 @@
   --why-accent: #f4f8ff;
 
   width: 100%;
-  padding: 112px 24px 120px;
+  padding: 90px 50px;
   background: var(--why-background);
   font-family: Inter, Arial, sans-serif;
 }

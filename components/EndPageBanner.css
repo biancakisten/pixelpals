@@ -7,7 +7,7 @@
   --end-banner-background: #ffffff;
 
   width: 100%;
-  padding: 90px 24px;
+  padding: 90px 50px;
   background: var(--end-banner-background);
   font-family: Inter, Arial, sans-serif;
 }
