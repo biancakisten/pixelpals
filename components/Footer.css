@@ -23,8 +23,7 @@
 
 .site-footer__content {
   display: grid;
-  grid-template-columns: minmax(280px, 410px) repeat(4, minmax(120px, auto));
-  justify-content: space-between;
+  grid-template-columns: minmax(280px, 1.5fr) repeat(3, minmax(140px, 1fr));
   gap: 48px;
   min-height: 190px;
 }

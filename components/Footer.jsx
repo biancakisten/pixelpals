@@ -1,32 +1,24 @@
 import './Footer.css';
 
-const navigationLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Portfolio', href: '/portfolio' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-];
-
 const serviceLinks = [
-  { label: 'Web Development', href: '/services#web-development' },
-  { label: 'Shopify Development', href: '/services#shopify' },
-  { label: 'UI/UX Design', href: '/services#ui-ux' },
-  { label: 'Automation', href: '/services#automation' },
+  { label: 'Web Development' },
+  { label: 'Shopify Development' },
+  { label: 'UI/UX Design' },
+  { label: 'Automation' },
 ];
 
 const aiLinks = [
-  { label: 'Resume Assistant', href: '/ai-platform#resume-assistant' },
-  { label: 'Website Audit', href: '/ai-platform#website-audit' },
-  { label: 'SEO Assistant', href: '/ai-platform#seo-assistant' },
-  { label: 'Content Generator', href: '/ai-platform#content-generator' },
+  { label: 'Resume Assistant' },
+  { label: 'Website Audit' },
+  { label: 'SEO Assistant' },
+  { label: 'Content Generator' },
 ];
 
 const socialLinks = [
-  { label: 'GitHub', href: 'https://github.com/biancakisten' },
-  { label: 'LinkedIn', href: '#' },
-  { label: 'Instagram', href: '#' },
-  { label: 'X', href: '#' },
+  'GitHub',
+  'LinkedIn',
+  'Instagram',
+  'X',
 ];
 
 function FooterColumn({ title, links }) {
@@ -37,7 +29,7 @@ function FooterColumn({ title, links }) {
       <ul>
         {links.map((link) => (
           <li key={link.label}>
-            <a href={link.href}>{link.label}</a>
+            <span>{link.label}</span>
           </li>
         ))}
       </ul>
@@ -71,7 +63,6 @@ export default function Footer() {
             </p>
           </div>
 
-          <FooterColumn title="Navigation" links={navigationLinks} />
           <FooterColumn title="Services" links={serviceLinks} />
           <FooterColumn title="AI Solutions" links={aiLinks} />
 
@@ -80,18 +71,8 @@ export default function Footer() {
 
             <ul>
               {socialLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    target={link.href.startsWith('http') ? '_blank' : undefined}
-                    rel={
-                      link.href.startsWith('http')
-                        ? 'noreferrer'
-                        : undefined
-                    }
-                  >
-                    {link.label}
-                  </a>
+                <li key={link}>
+                  <span>{link}</span>
                 </li>
               ))}
 

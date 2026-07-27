@@ -6,7 +6,6 @@ const solutions = [
     description:
       'A future suite of website, web application and Shopify solutions designed to help businesses launch stronger digital experiences.',
     tags: ['Websites', 'Web Applications', 'Shopify'],
-    status: 'In development',
     icon: 'build',
   },
   {
@@ -14,7 +13,6 @@ const solutions = [
     description:
       'Practical AI assistants, connected workflows and business automation tools designed to reduce repetitive work.',
     tags: ['AI Assistants', 'Workflows', 'Integrations'],
-    status: 'Research and development',
     icon: 'automate',
   },
   {
@@ -22,7 +20,6 @@ const solutions = [
     description:
       'Future tools for improving visibility, performance, analytics and ongoing digital growth.',
     tags: ['SEO', 'Performance', 'Analytics', 'Support'],
-    status: 'Planned',
     icon: 'grow',
   },
 ];
@@ -91,8 +88,6 @@ export default function HomeBanner() {
               <p className="home-banner__description">
                 {solution.description}
               </p>
-
-              <p className="home-banner__status">{solution.status}</p>
             </article>
           ))}
         </div>
