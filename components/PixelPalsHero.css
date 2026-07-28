@@ -93,7 +93,9 @@
 
 .pp-button:hover { transform: translateY(-2px); }
 .pp-button:focus-visible { outline: 3px solid rgb(59, 9, 109); outline-offset: 3px; }
-.pp-button--primary { background: #3b096d; border-color: var(--pp-blue); color: #fff; box-shadow: 0 18px 32px -18px rgba(15, 23, 42, 0.22); }
+.pp-button--primary,
+.pp-button--primary * { color: #fff !important; }
+.pp-button--primary { background: #3b096d; border-color: var(--pp-blue); box-shadow: 0 18px 32px -18px rgba(15, 23, 42, 0.22); }
 .pp-button--secondary { background: #fff; border-color: #A99DC6; color: var(--pp-navy); box-shadow: 0 10px 24px -18px rgba(15, 23, 42, 0.16); }
 .pp-button--secondary span:last-child { color: #3b096d; }
 

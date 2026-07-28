@@ -7,7 +7,7 @@
   --ai-surface: #ffffff;
 
   width: 100%;
-  padding: 90px 50px;
+  padding: 90px 50px 70px;
   background: #ffffff;
   font-family: Inter, Arial, sans-serif;
 }
@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 32px 40px;
   border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: 26px;
@@ -203,7 +203,7 @@
 
 @media (max-width: 767px) {
   .ai-platform {
-    padding: 72px 20px 88px;
+    padding: 72px 20px 70px;
   }
 
   .ai-platform__heading {
