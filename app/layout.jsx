@@ -1,5 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
+import SiteHeader from '../components/SiteHeader';
 
 export const metadata = {
   title: 'PixelPals',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <SiteHeader />
         {children}
         <Analytics />
       </body>
