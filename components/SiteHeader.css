@@ -32,13 +32,15 @@
 
 .site-header__brand-menu {
   position: relative;
+  display: flex;
+  height: 100%;
   flex: 0 0 auto;
+  align-items: center;
 }
 
 .site-header__brand {
   display: flex;
   align-items: center;
-  gap: 9px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -49,6 +51,7 @@
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
+  text-decoration: none;
 }
 
 .site-header__brand:focus-visible {
@@ -56,18 +59,9 @@
   outline-offset: 6px;
 }
 
-.site-header__brand-arrow {
-  font-size: 16px;
-  transition: transform 160ms ease;
-}
-
-.site-header__brand-arrow--open {
-  transform: rotate(180deg);
-}
-
 .site-header__dropdown {
   position: absolute;
-  top: calc(100% + 22px);
+  top: 100%;
   left: 0;
   width: 230px;
   padding: 8px;
@@ -75,6 +69,19 @@
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  visibility: hidden;
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+}
+
+.site-header__brand-menu:hover .site-header__dropdown,
+.site-header__brand-menu:focus-within .site-header__dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 .site-header__dropdown a {
