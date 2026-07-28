@@ -3,8 +3,9 @@ import { Analytics } from '@vercel/analytics/react';
 import SiteHeader from '../components/SiteHeader';
 
 export const metadata = {
-  title: 'PixelPals',
-  description: 'A playful pixel-art landing page.',
+  title: 'Pixel Pals South Africa | Web Development & AI Solutions',
+  description:
+    'Pixel Pals builds modern websites, Shopify experiences, AI-powered software and business automation solutions for clients in South Africa and worldwide.',
 };
 
 export default function RootLayout({ children }) {
