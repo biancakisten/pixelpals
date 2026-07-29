@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import SiteHeader from '../components/SiteHeader';
 
 export const metadata = {
-  title: 'Pixel Pals South Africa | Web Development & AI Solutions',
+  title: 'Pixel Pals | Web Development, AI Solutions & Shopify South Africa',
   description:
     'Pixel Pals builds modern websites, Shopify experiences, AI-powered software and business automation solutions for clients in South Africa and worldwide.',
 };
