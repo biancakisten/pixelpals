@@ -5,7 +5,7 @@ import SiteHeader from '../components/SiteHeader';
 export const metadata = {
   title: 'Pixel Pals | Web Development, AI Solutions & Shopify South Africa',
   description:
-    'Pixel Pals builds modern websites, Shopify experiences, AI-powered software and business automation solutions for clients in South Africa and worldwide.',
+    'Pixel Pals partners with businesses and agencies worldwide for freelance web development, Shopify, UI/UX, AI solutions and automation.',
 };
 
 export default function RootLayout({ children }) {

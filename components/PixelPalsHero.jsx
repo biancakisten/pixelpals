@@ -32,9 +32,8 @@ export default function PixelPalsHero({
           </h1>
 
           <p className="pp-hero__description" data-node-id="15:23">
-            Pixel Pals builds intelligent digital products that combine modern web
-            development, artificial intelligence, automation and scalable product
-            thinking to help businesses grow.
+            Pixel Pals partners with businesses and agencies worldwide for freelance
+            web development, Shopify, UI/UX, AI solutions and automation.
           </p>
 
           <div className="pp-hero__actions" data-node-id="15:24">
